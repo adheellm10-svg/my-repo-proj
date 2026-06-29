@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialFeed</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Social<span>Feed</span></div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search posts or people...">
+    </div>
+
+    <div class="nav-profile">
+      <div class="notification">🔔<span>3</span></div>
+      <div class="profile-small">A</div>
+      <p>Adheel</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <aside class="sidebar">
+      <div class="user-card">
+        <div class="profile-large">A</div>
+        <h3>Adheel Ahamed</h3>
+        <p>@adheel</p>
+
+        <div class="stats">
+          <div>
+            <strong>143</strong>
+            <span>Posts</span>
+          </div>
+          <div>
+            <strong>1.2M</strong>
+            <span>Followers</span>
+          </div>
+          <div>
+            <strong>210</strong>
+            <span>Following</span>
+          </div>
+        </div>
+      </div>
+
+      <ul class="menu">
+        <li class="active"> Home</li>
+        <li> Explore</li>
+        <li> Notifications</li>
+        <li> Messages</li>
+        <li> Profile</li>
+        <li> Settings</li>
+      </ul>
+    </aside>
+
+    <section class="feed-section">
+      <div class="create-post">
+        <div class="profile-small">A</div>
+
+        <div class="post-input-area">
+          <textarea id="postText" placeholder="What's happening, Adheel?"></textarea>
+
+          <div class="post-bottom">
+            <div class="post-icons">
+              <span> Photo</span>
+              <span> Feeling</span>
+              <span> Location</span>
+            </div>
+
+            <button id="postButton">Post</button>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="feed-title">Latest Feed</h2>
+
+      <div id="postContainer">
+
+        <article class="post-card">
+          <div class="post-header">
+            <div class="profile-small blue">R</div>
+            <div>
+              <h4>Rohit Kumar</h4>
+              <p>Just now </p>
+            </div>
+            <button class="more-btn">•••</button>
+          </div>
+
+          <p class="post-content">
+            Excited to start my new web development project! 
+          </p>
+
+          <div class="post-image image-one">
+            <span>WEB<br>DEVELOPMENT</span>
+          </div>
+
+          <div class="post-info">
+            <span>24 Likes</span>
+            <span>5 Comments</span>
+          </div>
+
+          <div class="post-actions">
+            <button class="like-btn">♡ Like</button>
+            <button class="comment-btn"> Comment</button>
+            <button>↗ Share</button>
+          </div>
+
+          <div class="comments">
+            <div class="comment">
+              <div class="comment-avatar">S</div>
+              <div>
+                <strong>Sanjay</strong>
+                <p>Great work! Keep going.</p>
+              </div>
+            </div>
+
+            <div class="comment-box">
+              <input type="text" placeholder="Write a comment...">
+              <button class="send-comment">Send</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <aside class="right-sidebar">
+      <div class="suggestion-card">
+        <div class="card-heading">
+          <h3>Suggestions</h3>
+          <a href="#">See all</a>
+        </div>
+
+        <div class="suggestion">
+          <div class="profile-small pink">P</div>
+          <div class="suggestion-name">
+            <strong>Anushka </strong>
+            <span>@anushka_art</span>
+          </div>
+          <button>Follow</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="profile-small green">V</div>
+          <div class="suggestion-name">
+            <strong>Vijay</strong>
+            <span>@vijay_tvk</span>
+          </div>
+          <button>Follow</button>
+        </div>
+
+        <div class="suggestion">
+          <div class="profile-small orange">K</div>
+          <div class="suggestion-name">
+            <strong>Karthik</strong>
+            <span>@mass_karthik</span>
+          </div>
+          <button>Follow</button>
+        </div>
+      </div>
+
+      <div class="trending-card">
+        <h3>Trending Now</h3>
+        <p>#WebDevelopment</p>
+        <p>#CollegeLife</p>
+        <p>#JavaScript</p>
+        <p>#TamilTech</p>
+        <p>#Internship</p>
+      </div>
+    </aside>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
